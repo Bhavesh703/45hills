@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  top: 2px;
+  z-index: 99;
+}
+
+header nav .navItem {
+  width: 100%;
+  display: flex;
+  left: calc(100% - 60%);
+  position: relative;
+}
+
+header nav .navItem .listItem {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 1rem 1rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.221);
+  backdrop-filter: blur(10px);
+}
+
+header nav .navItem .listItem li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+}
+
+header nav .logo {
+  border: 1px solid #fff;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.221);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/banner.png) no-repeat center center / cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+/* responsive navbar */
+.responsNav {
+  position: fixed;
+  left: 85%;
+  top: 4%;
+  background-color: rgba(255, 255, 255, 0.221);
+  backdrop-filter: blur(2px);
+  display: none;
+  z-index: 9999;
+}
+
+.offcanvas-start {
+  background-color: rgba(255, 255, 255, 0.221) !important;
+  backdrop-filter: blur(2px) !important;
+}
+
+.listItemRes {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.listItemRes li a {
+  /* background-color: white; */
+  color: #ffff;
+  /* padding: 0rem 1rem; */
+}
+
+header nav .navItem .listItem li .active{
+  background: white;
+    padding: 0.6rem 0.7rem;
+    border-radius: 25px;
+}
+
+/* main 45text */
+main .container .textCotainer {
+  margin-top: 7rem;
+}
+
+main .videoContainer {
+  margin-top: 7rem;
+}
+
+.textContent .title-1 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.btn-enquire {
+  /* --width: 150px; */
+  margin-top: 4rem;
+  padding: 0.9rem 1.45rem 0.9rem 1.45rem;
+  background-color: #992500;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(223, 5, 5),
+    rgba(244, 185, 185, 0.646),
+    rgb(223, 5, 5)
+  );
+  animation: 2s linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: 150px;
+  }
+}
+
+/* details */
+main .detailsContainer {
+  margin-top: 3rem;
+}
+
+main .detailsContainer .details {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: start; */
+  gap: 1.5rem;
+  margin: 1.5rem 0rem 0.5rem 2rem;
+}
+
+main .detailsContainer .details .deatilsText {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main .container-fluid .viewText {
+  font-size: 8rem;
+}
+/* gallery */
+.galleryText {
+  font-size: 8rem;
+}
+
+/* location text */
+.locationText {
+  font-size: 5rem;
+}
+
+.addressTxt {
+  font-size: 1.5rem;
+}
+
+/* contact */
+
+.formDetial textarea {
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+.formDetial {
+  max-width: 80%;
+  border-radius: 35px;
+  padding: 2rem 6rem 1rem 6rem;
+  background: linear-gradient(to right, #ffaa6c 100%, #ff6b00 100%);
+  margin: auto;
+  line-height: 50px;
+}
+.form-title {
+  font-weight: 600;
+  color: #000000;
+  font-size: 3rem;
+}
+
+.FormTxt {
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+}
+
+.btn-submit {
+  background-color: #002d4e;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem 4rem;
+  font-weight: 600;
+}
+
+/* Floor plan */
+.FloorTxt {
+  font-size: 7rem;
+}
+
+.floorContainer {
+  position: relative;
+}
+
+.bhkBtn .bhk3_g-floor,
+.bhk3_1-floor,
+.bhk3_2-floor {
+  display: flex;
+  /* position: absolute; */
+  flex-direction: column;
+  gap: 4rem;
+  top: 1%;
+}
+
+.bhk-button {
+  position: relative;
+}
+
+.bhkBtn {
+  position: absolute;
+  left: 4%;
+  background-color: white;
+  width: 75px;
+  border-radius: 4px;
+  bottom: 4%;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.bhkBtn button {
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: transparent;
+  width: 100%;
+  color: #979393;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+ .show {
+  background-color: #cecece !important;
+ 
+}
+
+.bhk-button {
+  position: relative;
+}
+
+img .active {
+  background: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 38px;
+}
+
+
+.bhkBtn button:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5rem;
+}
+
+.btnDiv button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.bhk3-img.show {
+  display: block;
+}
+
+.bhk3-img {
+  display: none;
+}
+
+.bhk4-img {
+  display: none;
+}
+
+.bhk5-img {
+  display: none;
+}
+
+.bhk4-img.show {
+  display: block;
+}
+
+.bhk5-img.show {
+  display: block;
+}
+
+.bhk-button {
+  display: none;
+}
+
+.bhk-button.active {
+  display: block;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 6rem;
+  background-color: #000000;
+}
+.barcodeSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.contactNumber {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 950px) {
+  header nav .navItem .listItem {
+    display: none;
+  }
+
+  .responsNav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  main .container-fluid .viewText {
+    font-size: 6rem;
+  }
+  .galleryText {
+    font-size: 6rem;
+  }
+
+  .textContent .title-1 {
+    font-size: 6rem;
+  }
+  .locationText {
+    font-size: 4rem;
+  }
+
+  .addressTxt {
+    font-size: 1.5rem;
+  }
+
+  .FloorTxt{
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .formDetial {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main .container-fluid .viewText {
+    font-size: 4rem;
+  }
+  .galleryText {
+    font-size: 4rem;
+  }
+
+  .textContent .title-1 {
+    font-size: 4rem;
+  }
+
+  .locationText {
+    font-size: 4rem;
+  }
+
+  .addressTxt {
+    font-size: 1.5rem;
+  }
+  .formDetial {
+    padding: 10px;
+  }
+
+  .FloorTxt{
+    font-size: 3.5rem;
+  }
+}
